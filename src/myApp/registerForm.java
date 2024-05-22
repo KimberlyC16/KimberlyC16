@@ -334,6 +334,7 @@ public class registerForm extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Successfully Registered");
                     logBoard db = new logBoard();
                     db.setVisible(true);
+                    this.dispose();
 //                    this.hide();
                 } else {
                     JOptionPane.showMessageDialog(null, "Passwords do not match");

@@ -128,7 +128,7 @@ public class dashBoard extends javax.swing.JFrame {
                 jLabel8MouseClicked(evt);
             }
         });
-        reportPane.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 220, 90));
+        reportPane.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 90));
 
         navbar.add(reportPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 220, 100));
 
@@ -250,14 +250,14 @@ public class dashBoard extends javax.swing.JFrame {
     }//GEN-LAST:event_dashPaneMouseClicked
 
     private void reportPaneMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_reportPaneMouseClicked
-//        report rp = new report();
-//        mainDesktop.add(rp).setVisible(true);
-//        rp.ad = ad;
+     report rp = new report();
+      mainDesktop.add(rp).setVisible(true);
+       rp.ad = ad;
     }//GEN-LAST:event_reportPaneMouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         if (nam.equalsIgnoreCase("admin")) {
-//            dashBoardPage up = new dashBoardPage();
+           dashBoardPage up = new dashBoardPage();
 
             dashBoardPage db = new dashBoardPage();
             mainDesktop.add(db).setVisible(true);
@@ -275,7 +275,8 @@ public class dashBoard extends javax.swing.JFrame {
 
         studentRep db = new studentRep();
         mainDesktop.add(db).setVisible(true);
-        db.ad= nam;
+        db.ad = nam;
+        this.dispose();
 
     }//GEN-LAST:event_jLabel8MouseClicked
 

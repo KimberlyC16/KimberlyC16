@@ -140,7 +140,7 @@ public class addScholarForm extends javax.swing.JFrame {
         jPanel34.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 150));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/admins.jpg"))); // NOI18N
-        jPanel34.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 180, 480, 550));
+        jPanel34.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 170, 470, 550));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -150,7 +150,7 @@ public class addScholarForm extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, 730, Short.MAX_VALUE)
+            .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
         );
 
         pack();

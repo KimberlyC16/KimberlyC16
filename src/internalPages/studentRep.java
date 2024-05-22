@@ -71,7 +71,8 @@ public class studentRep extends javax.swing.JInternalFrame {
         inf = new javax.swing.JButton();
         print = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 204));
         jPanel1.setLayout(null);
@@ -84,7 +85,7 @@ public class studentRep extends javax.swing.JInternalFrame {
         jScrollPane2.setViewportView(rep);
 
         jPanel1.add(jScrollPane2);
-        jScrollPane2.setBounds(40, 122, 560, 380);
+        jScrollPane2.setBounds(40, 122, 690, 380);
 
         inf.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         inf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-print-30.png"))); // NOI18N
@@ -95,7 +96,7 @@ public class studentRep extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(inf);
-        inf.setBounds(340, 80, 130, 30);
+        inf.setBounds(480, 80, 130, 30);
 
         print.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         print.setText("Table");
@@ -105,7 +106,7 @@ public class studentRep extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(print);
-        print.setBounds(480, 80, 110, 30);
+        print.setBounds(620, 80, 110, 30);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-log-out-30.png"))); // NOI18N
         jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -114,24 +115,9 @@ public class studentRep extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(jLabel12);
-        jLabel12.setBounds(580, 0, 30, 30);
+        jLabel12.setBounds(700, 10, 30, 30);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/t_1.png"))); // NOI18N
-        jPanel1.add(jLabel9);
-        jLabel9.setBounds(10, 0, 110, 110);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 615, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 516, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 627, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -174,7 +160,7 @@ public class studentRep extends javax.swing.JInternalFrame {
                 rp.ads = ad;
                 Font font = new Font("Tahoma", Font.BOLD, 15);
 
-                // rep.print();
+                rep.print();
                 JFrame mainFrame = (JFrame) SwingUtilities.getWindowAncestor(this);
                 mainFrame.dispose();
                 this.dispose();
@@ -208,7 +194,6 @@ public class studentRep extends javax.swing.JInternalFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton inf;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton print;
