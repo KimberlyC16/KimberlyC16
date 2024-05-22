@@ -91,11 +91,9 @@ public class dashBoardPage extends javax.swing.JInternalFrame {
         boardPage6.setBackground(new java.awt.Color(153, 204, 255));
         boardPage6.setPreferredSize(new java.awt.Dimension(630, 580));
         boardPage6.setRequestFocusEnabled(false);
-        boardPage6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         dash1.setBackground(new java.awt.Color(51, 153, 255));
         dash1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        dash1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         settings.setBackground(new java.awt.Color(255, 255, 255));
         settings.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -110,14 +108,24 @@ public class dashBoardPage extends javax.swing.JInternalFrame {
                 settingsMouseExited(evt);
             }
         });
-        settings.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-administrator-male-100.png"))); // NOI18N
-        settings.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 90, -1));
 
-        dash1.add(settings, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 130, 100));
+        javax.swing.GroupLayout settingsLayout = new javax.swing.GroupLayout(settings);
+        settings.setLayout(settingsLayout);
+        settingsLayout.setHorizontalGroup(
+            settingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, settingsLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        settingsLayout.setVerticalGroup(
+            settingsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+        );
 
         applicationForm.setBackground(new java.awt.Color(255, 255, 255));
         applicationForm.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -132,15 +140,27 @@ public class dashBoardPage extends javax.swing.JInternalFrame {
                 applicationFormMouseExited(evt);
             }
         });
-        applicationForm.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         man1.setBackground(new java.awt.Color(255, 255, 255));
         man1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         man1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         man1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-business-report-100.png"))); // NOI18N
-        applicationForm.add(man1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 70, -1));
 
-        dash1.add(applicationForm, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 310, 130, 100));
+        javax.swing.GroupLayout applicationFormLayout = new javax.swing.GroupLayout(applicationForm);
+        applicationForm.setLayout(applicationFormLayout);
+        applicationFormLayout.setHorizontalGroup(
+            applicationFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, applicationFormLayout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(man1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20))
+        );
+        applicationFormLayout.setVerticalGroup(
+            applicationFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, applicationFormLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(man1))
+        );
 
         userInfo.setBackground(new java.awt.Color(255, 255, 255));
         userInfo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -155,29 +175,100 @@ public class dashBoardPage extends javax.swing.JInternalFrame {
                 userInfoMouseExited(evt);
             }
         });
-        userInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         man2.setBackground(new java.awt.Color(153, 204, 255));
         man2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         man2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         man2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/icons8-user-folder-100.png"))); // NOI18N
-        userInfo.add(man2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 90, -1));
 
-        dash1.add(userInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 310, 130, 100));
+        javax.swing.GroupLayout userInfoLayout = new javax.swing.GroupLayout(userInfo);
+        userInfo.setLayout(userInfoLayout);
+        userInfoLayout.setHorizontalGroup(
+            userInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(userInfoLayout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(man2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        userInfoLayout.setVerticalGroup(
+            userInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(man2)
+        );
 
         jPanel1.setBackground(new java.awt.Color(0, 102, 204));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ched_header.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 13, 635, -1));
 
-        dash1.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, -1));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(13, 13, 13)
+                .addComponent(jLabel1))
+        );
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 204));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        dash1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 170, 510));
 
-        boardPage6.add(dash1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 812, 580));
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 170, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 510, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout dash1Layout = new javax.swing.GroupLayout(dash1);
+        dash1.setLayout(dash1Layout);
+        dash1Layout.setHorizontalGroup(
+            dash1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dash1Layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(dash1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
+                .addComponent(settings, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63)
+                .addComponent(applicationForm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(userInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
+        );
+        dash1Layout.setVerticalGroup(
+            dash1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dash1Layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(78, 78, 78)
+                .addGroup(dash1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(applicationForm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(userInfo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(settings, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(dash1Layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout boardPage6Layout = new javax.swing.GroupLayout(boardPage6);
+        boardPage6.setLayout(boardPage6Layout);
+        boardPage6Layout.setHorizontalGroup(
+            boardPage6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(dash1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        boardPage6Layout.setVerticalGroup(
+            boardPage6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(dash1, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         getContentPane().add(boardPage6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 580));
 
