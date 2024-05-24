@@ -76,7 +76,6 @@ public class admin extends javax.swing.JFrame {
         email1 = new javax.swing.JLabel();
         user = new javax.swing.JTextField();
         num = new javax.swing.JTextField();
-        st = new javax.swing.JLabel();
         accSet = new javax.swing.JPanel();
         manageStudents = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -162,10 +161,7 @@ public class admin extends javax.swing.JFrame {
         num.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         info.add(num, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 180, 30));
 
-        st.setBackground(new java.awt.Color(0, 0, 0));
-        info.add(st, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 180, 110, 30));
-
-        jPanel2.add(info, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 610, 230));
+        jPanel2.add(info, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, 610, 230));
 
         accSet.setBackground(new java.awt.Color(204, 204, 204));
         accSet.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -299,21 +295,19 @@ public class admin extends javax.swing.JFrame {
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 830, 140));
 
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(0, 0, 900, 650);
+        jPanel2.setBounds(0, -10, 900, 650);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(267, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 831, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE))
         );
 
         pack();
@@ -450,7 +444,6 @@ public class admin extends javax.swing.JFrame {
     public javax.swing.JTextField num;
     private javax.swing.JLabel position;
     private javax.swing.JPanel reports;
-    public javax.swing.JLabel st;
     public javax.swing.JTextField studentId;
     public javax.swing.JTextField user;
     // End of variables declaration//GEN-END:variables

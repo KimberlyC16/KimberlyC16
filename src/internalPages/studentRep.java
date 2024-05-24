@@ -117,7 +117,7 @@ public class studentRep extends javax.swing.JInternalFrame {
         jPanel1.add(jLabel12);
         jLabel12.setBounds(700, 10, 30, 30);
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 627, 520));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 760, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
